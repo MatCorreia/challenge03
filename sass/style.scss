@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+$violet: hsl(257, 40%, 49%);
+$magenta: hsl(300, 69%, 71%);
+$white: #fff;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $violet;
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.container-fluid {
+    max-width: 1440px;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 150px;
+}
+
+.main-left {
+    padding: 10px;
+}
+
+.main-right {
+    padding: 50px;
+}
+
+button {
+    background-color: $white;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: $violet;
+    box-shadow: 0 0 0.7em hsl(257, 39%, 34%);
+    cursor: pointer;
+    &:hover {
+        background-color: $magenta;
+        color: $white;
+    }
+}
+
+.social-media {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons {
+    margin: 0 0.5em;
+}
+
+.fab { 
+    text-align: center;
+    border: 2px solid $white;
+    border-radius: 50%;
+    width: 40px; 
+    color: $white;
+    padding: 10px;
+    &:hover {
+    color: $magenta;
+    border-color: $magenta;
+    }
+}
+
+
+@media(max-width:1200px) {
+
+    body {
+        background-color: $violet;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw 430px;
+    }
+
+    .container {
+        padding: 1em;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100% !important;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+    
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2em;
+    }
+
+    img {
+        width: 80vw;
+    }
+
+    .row {
+        margin: auto;
+    }
+}
